@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PostApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<header>
+			<%= link_to("Home", {controller: "home", action: "home"}, class: "header_links") %>
+			<%= link_to("Globalcaws", {controller: "home", action: "globalcaws"}, class: "header_links") %>
+			<% if @current_user %>
+				<%= link_to("Profile", @current_user, class: "header_links") %>
+				<%= link_to("Sign-out", {controller: "sessions", action: "destroy", method: "post"}, class: "header_links") %>
+		<% end %>
+	</header>
+	<div class="main_container">
+		<div class= "inner_containers" id="profile_container">
+			<%= content_tag :div, class: "inner_profile" do %>
+				<%= image_tag "crow.png", class: "user_picture" %>
+				<%= content_tag :div, class: "user_stats_container" do %>
+					<% if @current_user %>
+						<%= content_tag :div, class: "user_stats" do %>
+							<%= content_tag :p, class: "stat_title" do %>
+								following
+							<% end %>
+							<%= @current_user.following.count %>
+						<% end %>
+						<%= content_tag :div, class: "user_stats" do %>
+							<%= content_tag :p, class: "stat_title" do %>
+								followers
+							<% end %>
+							<%= @current_user.followers.count %>
+						<% end %>
+						<%= content_tag :div, class: "user_stats" do %>
+							<%= content_tag :p, class: "stat_title" do %>
+								posts
+							<% end %>
+							<%= @current_user.posts.count %>
+						<% end %>
+					<% end %>
+				<% end %>
+				<%= yield :profile %>
+			<% end %>
+		</div>
+		<div class= "inner_containers" id="feed_container">
+			<%= yield :feed %>
+		</div>
+		<div class= "inner_containers" id="followers_container">
+			<%= content_tag :div, class: "inner_followers" do%>
+				<% User.all.each do |user| %>
+					<% if @current_user %>
+					<% if user.id != @current_user.id  %>
+							<%= content_tag :div, class: "user_list" do %>
+								<%= image_tag("crow.png", class: "user_picture") %>
+								<%= content_tag :h5, class: "full_name" do %>
+									<%= user.username + " | " + user.fname + " " + user.lname %>
+								<% end %>
+								<% if @current_user.following?(user) %>
+									<%= button_to "unfollow", user_relationship_path(user.id, @current_user.id), method: :delete, class: "exchange" %>
+									<% else %>
+									<%= button_to "follow", user_relationships_path(user.id), method: :post, class: "exchange" %>
+								<% end %>
+							<% end %>
+						<% end %>
+					<% end %>
+				<% end %>
+			<% end %>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.landing_div {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+body {
+	margin: 0;
+	/*padding: 25px;*/
+	font-family: helvetica, serif;
+	background-color: #F5F8FA
+}
+
+header {
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;	
+	background-color: white;
+	width: 100%;
+	height: 50px;
+	border-bottom: solid 2px grey;
+}
+
+.main_container {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.inner_containers {
+	overflow: auto;
+	background-color: white;
+	border-radius: 5px;
+	margin: 2% 2% 0 2%;
+	border: solid 1px #D7E1E5;
+}
+
+#profile_container {
+	width: 30%;
+}
+
+#feed_container {
+	width: 50%;
+}
+
+#followers_container {
+	width: 30%;
+}
+
+.header_links_container {
+	
+	/*text-align: center;*/
+
+}
+
+.header_links {
+	/*padding: 0 10%;*/
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#sign_out_link {
+	/*margin-left: auto;*/	
+}
+
+.button_to {
+	display: -webkit-flex;
+	display: flex;
+	/*width: 90%;*/
+}
+
+.delete_post_button {
+	margin-left: auto;
+	padding: 0;
+	/*display: inline-block;*/
+}
+
+.user_picture {
+	text-align: center;
+	width: 25%;
+}
+
+.inner_followers {
+	display: inline-block;
+	width: 100%;
+	/*padding: 2%;*/
+	border-bottom: solid 1px #E0EAED;
+
+}
+
+.user_list {
+	width: 100%;
+}
+
+.user_stats_container {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-around;
+}
+.user_stats {
+	display: inline-block;
+}
+
+.stat_title {
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+

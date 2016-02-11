@@ -1,0 +1,21 @@
+.user {
+	border: solid black 2px;
+	border-radius: 15%;
+	display: block;
+	padding: 15px;
+	width: 200px;
+	text-align: center;
+}
+
+.edit_profile_container {
+	width: 300px;
+	display: none;
+}
+
+.edit_profile_button {
+	float: right;
+}
+
+.edit_profile_fields {
+	
+}

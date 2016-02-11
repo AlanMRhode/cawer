@@ -1,0 +1,8 @@
+<% @users.each do |f| %>
+	<div class="user">
+	<%= f.fname %>
+	<%= f.lname %>
+	<%= f.email %> 
+	<%= link_to("View Profile", user_path(f)) %> 
+</div>
+<% end %>

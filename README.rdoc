@@ -1,0 +1,11 @@
+== Caw Blog
+
+Developed by Alan Rhode and Steven Rayesky
+
+A basic Rails blog that has the following:
+
+* User, Post, and Comment models.
+
+* Have similar functionality to Tumblr - users can login, write posts, comment on other users' posts, etc.
+
+Our app will attempt to be a twitter clone in presentation with a few changes.

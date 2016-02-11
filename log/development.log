@@ -1,0 +1,1807 @@
+
+
+Started GET "/" for ::1 at 2016-02-08 22:28:19 -0500
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/AlanMichaelRhode/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/AlanMichaelRhode/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/AlanMichaelRhode/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.1ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.5ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.9ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (127.7ms)
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  select sqlite_version(*)
+  [1m[36m (1.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20160105203326)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar, "lname" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160105203326"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to CreatePosts (20160105203426)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160105203426"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Migrating to AddPasswordColumnUser (20160105222559)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "password" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160105222559"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to AddUsernameColumnUser (20160106191858)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "username" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160106191858"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Migrating to CreateProfiles (20160106200731)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "biography" varchar, "age" varchar, "location" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160106200731"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Migrating to CreateComments (20160106200950)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "post_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160106200950"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Migrating to CreateRelationships (20160106203637)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_relationships_on_follower_id" ON "relationships" ("follower_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_relationships_on_followed_id" ON "relationships" ("followed_id")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_relationships_on_follower_id_and_followed_id" ON "relationships" ("follower_id", "followed_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160106203637"]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id_and_followed_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_followed_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_relationships_on_follower_id' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2016-02-08 22:28:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (2.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 1932ms (Views: 1913.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/home.self-a2593a9a50f9c3df02185050da41ba615e6ba64e4d9f2862174796180e6ebfaf.css?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/layout.self-1b62ff96fd901a9b77637e6e1d8ac5d30cc980e87248d170e4cda4b80fb91581.css?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/index.self-7cd624a00eac9a5839b04d10e37fc680448041d953685242d3b97dce9deb0bc2.css?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/profiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/relationships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/users.self-1263956358680905a40795e82390fdc6fa5506c4f0b24b2021e7d23a82513217.css?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/application.self-a3115e8c8dfd0c065aeeac6e2bc0f57b637f7297dffc57b63a6e62587756c789.css?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/home.self-61de3bbaeb0f7bdcdee5327df21063e12f4bb6d779537df340acb8d633c83b62.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/relationships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/users.self-ee011e4619610d1ca610faf1757bd2c11697e8820d0af02bbf699cb329af7562.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/assets/crow-d57c108b2243aa0a6063ce73e3ab1ec5bb65033e0a9e8ba0bacb08b9787773ba.png" for ::1 at 2016-02-08 22:28:47 -0500
+
+
+Started GET "/users/new" for ::1 at 2016-02-08 22:28:56 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/main (44.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 81ms (Views: 80.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-08 22:29:06 -0500
+Processing by HomeController#globalcaws as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-08 22:29:06 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (1.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-08 22:29:08 -0500
+Processing by HomeController#globalcaws as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-08 22:29:08 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-02-08 22:29:09 -0500
+Processing by HomeController#home as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `followers_posts' for nil:NilClass):
+  app/controllers/home_controller.rb:14:in `home'
+
+
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.9ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (53.7ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (117.0ms)
+
+
+Started GET "/home" for ::1 at 2016-02-08 22:29:09 -0500
+Processing by HomeController#home as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `followers_posts' for nil:NilClass):
+  app/controllers/home_controller.rb:14:in `home'
+
+
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.8ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.6ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.7ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (94.1ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-08 22:29:16 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/main (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2016-02-08 22:29:36 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c9wL1UspIqn4yqSAVbGlcyIOHlTbcIAYAqm8+ubPHjP0sTXW6DcexejoAb7bZE6ux+hMhk7zh9om1v8vz4c+ig==", "user"=>{"username"=>"AlanMRhode", "fname"=>"Alan", "lname"=>"Rhode", "email"=>"AlanMichaelRhode@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'AlanMichaelRhode@gmail.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'AlanMRhode' LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "users" ("username", "fname", "lname", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["username", "AlanMRhode"], ["fname", "Alan"], ["lname", "Rhode"], ["email", "AlanMichaelRhode@gmail.com"], ["password", "12345678"], ["created_at", "2016-02-09 03:29:36.062730"], ["updated_at", "2016-02-09 03:29:36.062730"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "profiles" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 1], ["created_at", "2016-02-09 03:29:36.073260"], ["updated_at", "2016-02-09 03:29:36.073260"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mProfile Load (0.2ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 56ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-08 22:29:36 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-08 22:29:48 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0N4TNFJ8D//UJZ+GFELpKwxBerc7HgkrdQBj7EL8u3lXsy038WIzk8QHOrialwL26acoZa6dDulRfyA5a7SbwA==", "username"=>"AlanMRhode", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["username", "AlanMRhode"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/home.1
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/home.1" for ::1 at 2016-02-08 22:29:48 -0500
+Processing by HomeController#home as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  Rendered home/home.html.erb within layouts/main (2.0ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 71ms (Views: 48.7ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/posts" for ::1 at 2016-02-08 22:30:19 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uPHxE9Wm4tp+9YkyO+gAb7hzw7mIeUooLEy+51l0NJM/nM8Qdrjetm7XLAy1PeuyXZWRax36TeoIM/0ycDwUKg==", "post"=>{"title"=>"My First Post!", "content"=>"This is my first post!"}, "commit"=>"create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My First Post!"], ["content", "This is my first post!"], ["created_at", "2016-02-09 03:30:19.354071"], ["updated_at", "2016-02-09 03:30:19.354071"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "posts" SET "user_id" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["user_id", 1], ["updated_at", "2016-02-09 03:30:19.359596"], ["id", 1]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/home.1
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/home.1" for ::1 at 2016-02-08 22:30:19 -0500
+Processing by HomeController#home as 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  Rendered home/home.html.erb within layouts/main (0.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for ::1 at 2016-02-08 22:30:22 -0500
+Processing by HomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  Rendered home/home.html.erb within layouts/main (1.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home" for ::1 at 2016-02-08 22:30:23 -0500
+Processing by HomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  Rendered home/home.html.erb within layouts/main (0.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-08 22:30:24 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (1.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered home/globalcaws.html.erb within layouts/main (8.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:48:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users"
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (3.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 371ms (Views: 355.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/profiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/layout.self-1b62ff96fd901a9b77637e6e1d8ac5d30cc980e87248d170e4cda4b80fb91581.css?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/index.self-7cd624a00eac9a5839b04d10e37fc680448041d953685242d3b97dce9deb0bc2.css?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/home.self-a2593a9a50f9c3df02185050da41ba615e6ba64e4d9f2862174796180e6ebfaf.css?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/users.self-1263956358680905a40795e82390fdc6fa5506c4f0b24b2021e7d23a82513217.css?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/application.self-a3115e8c8dfd0c065aeeac6e2bc0f57b637f7297dffc57b63a6e62587756c789.css?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/home.self-61de3bbaeb0f7bdcdee5327df21063e12f4bb6d779537df340acb8d633c83b62.js?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/crow-d57c108b2243aa0a6063ce73e3ab1ec5bb65033e0a9e8ba0bacb08b9787773ba.png" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/users.self-ee011e4619610d1ca610faf1757bd2c11697e8820d0af02bbf699cb329af7562.js?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-02-10 22:48:19 -0500
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-10 22:48:32 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WXXxg5Gt3V2oQxO+WBxf3K6Bse6Eg/6z5SbJZ7cuuR902ZqCdnLldds7PpWPIr8ISoFQ1Wg0wOMqraxrqD5JHg==", "username"=>"AlanMichaelRhode", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["username", "AlanMichaelRhode"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:48:32 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-10 22:48:42 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w6u2m0M2fnvWzWNuz1t9G1ypITpdCfLoRcQkNcMucnXuB92apOlGU6W1TkUYZZ3PuKnAAbG+zLiKT0E53D6CdA==", "username"=>"amrhode", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["username", "amrhode"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:48:42 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-10 22:48:44 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/main (40.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 71ms (Views: 70.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2016-02-10 22:49:22 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gOIm6/B0YV3E7WCBAbqaVaU1OKgzEYwx8Dbqz3TVg6atTk3qF6tZdbeVTarWhHqBQTXZk9+msmE/vY/Da8Vzpw==", "user"=>{"username"=>"JonWex", "fname"=>"Jon", "lname"=>"Wexler", "email"=>"jon@nycda.com", "password"=>"[FILTERED]"}, "commit"=>"create"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jon@nycda.com' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'JonWex' LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "users" ("username", "fname", "lname", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["username", "JonWex"], ["fname", "Jon"], ["lname", "Wexler"], ["email", "jon@nycda.com"], ["password", "12345678"], ["created_at", "2016-02-11 03:49:22.240654"], ["updated_at", "2016-02-11 03:49:22.240654"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "profiles" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 2], ["created_at", "2016-02-11 03:49:22.252288"], ["updated_at", "2016-02-11 03:49:22.252288"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 53ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:49:22 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (1.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-10 22:49:32 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Asv79JNlaL/Y9xT5ftOg3eO7EvQJUI7yaVgxZVxR2o0vZ5D1dLpQl6uPOdKp7UAJB7vzz+XnsKKm01RpQ0EqjA==", "username"=>"jonwex", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["username", "jonwex"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:49:32 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-10 22:49:41 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xUrIZ99meqGfRdTw2iAoIQzfXjygBD9uQxg7e4J55+Ho5qNmOLlCiew9+dsNHsj16N+/B0yzAT6Mk153nWkX4A==", "username"=>"JonWex", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["username", "JonWex"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/home.2
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/home.2" for ::1 at 2016-02-10 22:49:41 -0500
+Processing by HomeController#home as 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 2]]
+  Rendered home/home.html.erb within layouts/main (2.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 96ms (Views: 70.3ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/users/1/relationships" for ::1 at 2016-02-10 22:49:45 -0500
+Processing by RelationshipsController#create as HTML
+  Parameters: {"authenticity_token"=>"vUNMF0ZLYefMiGEK2jiVQaqLjKSr0+pugchFjha+rmOQ7ycWoZRZz7/wTCENBnWVTottn0dk1D5OQyCCCa5eYg==", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "relationships" ("followed_id", "follower_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["followed_id", 1], ["follower_id", 2], ["created_at", "2016-02-11 03:49:45.367895"], ["updated_at", "2016-02-11 03:49:45.367895"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/home.2
+Completed 302 Found in 10ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/home.2" for ::1 at 2016-02-10 22:49:45 -0500
+Processing by HomeController#home as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mComment Load (1.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered home/home.html.erb within layouts/main (4.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 51ms (Views: 44.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/posts" for ::1 at 2016-02-10 22:50:19 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NmUsCEoqZzqoHfAbC7s0a2szoyVgvNSjqX+J9TyvCMQbyUcJrfVfEttl3TDchdS/jzNCHowL6vNm9Oz5I7/4xQ==", "post"=>{"title"=>"My First Post Too!", "content"=>"This is the second post of Cawer"}, "commit"=>"create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My First Post Too!"], ["content", "This is the second post of Cawer"], ["created_at", "2016-02-11 03:50:19.837444"], ["updated_at", "2016-02-11 03:50:19.837444"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "posts" SET "user_id" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["user_id", 2], ["updated_at", "2016-02-11 03:50:19.841273"], ["id", 2]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/home.2
+Completed 302 Found in 9ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/home.2" for ::1 at 2016-02-10 22:50:19 -0500
+Processing by HomeController#home as 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 2]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered home/home.html.erb within layouts/main (3.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 74ms (Views: 70.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:50:23 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered home/globalcaws.html.erb within layouts/main (6.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 2], ["id", 1]]
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts/1/comments" for ::1 at 2016-02-10 22:50:33 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gn+3epnmagSA0HCKvNjFPihA6PcBb9ZU7fBFCP/qrWuv09x7fjlSLPOoXaFr5iXqzEAJzO3Y6AQieyAE4Ppdag==", "comment"=>{"content"=>"Welcome!"}, "commit"=>"Comment", "post_id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "Welcome!"], ["created_at", "2016-02-11 03:50:33.720332"], ["updated_at", "2016-02-11 03:50:33.720332"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "comments" SET "user_id" = ?, "post_id" = ?, "updated_at" = ? WHERE "comments"."id" = ?  [["user_id", 2], ["post_id", 1], ["updated_at", "2016-02-11 03:50:33.724969"], ["id", 1]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/globalcaws
+Completed 302 Found in 10ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:50:33 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered home/globalcaws.html.erb within layouts/main (7.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 2], ["id", 1]]
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/2" for ::1 at 2016-02-10 22:50:54 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 2]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Rendered users/show.html.erb within layouts/main (8.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 2], ["id", 1]]
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/profiles/2/update" for ::1 at 2016-02-10 22:51:10 -0500
+Processing by ProfilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VgMyk/fzNNSIPGQ6frY3qrm1SBwyGuKfHxFRkiwIMN17r1mSECwM/PtESRGpiNd+XbWpJ96t3M/QmjSeMxjA3A==", "form_fields"=>{"biography"=>"Coding", "age"=>"25", "location"=>"Philadelphia"}, "commit"=>"Edit", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mProfile Load (0.1ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "profiles" SET "biography" = ?, "age" = ?, "location" = ?, "updated_at" = ? WHERE "profiles"."id" = ?  [["biography", "Coding"], ["age", "25"], ["location", "Philadelphia"], ["updated_at", "2016-02-11 03:51:10.126797"], ["id", 2]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users/2" for ::1 at 2016-02-10 22:51:10 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 2]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Rendered users/show.html.erb within layouts/main (6.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 2], ["id", 1]]
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sign-out?method=post" for ::1 at 2016-02-10 22:51:44 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"method"=>"post"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:51:44 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-10 22:51:51 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Hv3n3fBtaAp312TElyQq1hXhS6zj7sS7vQkvYW+IpTN15yekB6NiFqncLjFYnB/vFdkFV84hUIhf0Gxmq7SlQ==", "username"=>"AlanMRhode", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["username", "AlanMRhode"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/home.1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/home.1" for ::1 at 2016-02-10 22:51:51 -0500
+Processing by HomeController#home as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  Rendered home/home.html.erb within layouts/main (0.8ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 48ms (Views: 44.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/2/relationships" for ::1 at 2016-02-10 22:51:53 -0500
+Processing by RelationshipsController#create as HTML
+  Parameters: {"authenticity_token"=>"nsBSKLp9gcwydBVexgPWLe/VvkjwNtz39onWlsRsS32zbDkpXaK55EEMOHURPTb5C9VfcxyB4qc5ArOa23y7fA==", "user_id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "relationships" ("followed_id", "follower_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["followed_id", 2], ["follower_id", 1], ["created_at", "2016-02-11 03:51:53.887517"], ["updated_at", "2016-02-11 03:51:53.887517"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/home.1
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/home.1" for ::1 at 2016-02-10 22:51:53 -0500
+Processing by HomeController#home as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  Rendered home/home.html.erb within layouts/main (2.1ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:51:56 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered home/globalcaws.html.erb within layouts/main (5.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 1], ["id", 2]]
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/home" for ::1 at 2016-02-10 22:51:58 -0500
+Processing by HomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  Rendered home/home.html.erb within layouts/main (3.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:52:00 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered home/globalcaws.html.erb within layouts/main (5.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 1], ["id", 2]]
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/posts/1/comments" for ::1 at 2016-02-10 22:52:12 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jfddUB45SYvrIHrDQuBN0z2WttboNKsXkL7xb/xH5BWgWzZR+eZxo5hYV+iV3q0H2ZZX7QSDlUdfNZRj41cUFA==", "comment"=>{"content"=>"Thanks!"}, "commit"=>"Comment", "post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Thanks!"], ["created_at", "2016-02-11 03:52:12.741771"], ["updated_at", "2016-02-11 03:52:12.741771"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "comments" SET "user_id" = ?, "post_id" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["user_id", 1], ["post_id", 1], ["updated_at", "2016-02-11 03:52:12.747257"], ["id", 2]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/globalcaws
+Completed 302 Found in 10ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:52:12 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/globalcaws.html.erb within layouts/main (6.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 1], ["id", 2]]
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/posts/2/comments" for ::1 at 2016-02-10 22:52:23 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hpJjYQfHYt9nO83F3IjaIk4HbjbsIlGDMp+65NoNoIWrPghg4Bha9xRD4O4Ltjr2qgePDQCVb9P9FN/oxR1QhA==", "comment"=>{"content"=>"Congrats!"}, "commit"=>"Comment", "post_id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "Congrats!"], ["created_at", "2016-02-11 03:52:23.365142"], ["updated_at", "2016-02-11 03:52:23.365142"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "comments" SET "user_id" = ?, "post_id" = ?, "updated_at" = ? WHERE "comments"."id" = ?  [["user_id", 1], ["post_id", 2], ["updated_at", "2016-02-11 03:52:23.369596"], ["id", 3]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/globalcaws
+Completed 302 Found in 9ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:52:23 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/globalcaws.html.erb within layouts/main (8.9ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 1], ["id", 2]]
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/sign-out?method=post" for ::1 at 2016-02-10 22:52:38 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"method"=>"post"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:52:38 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-10 22:52:40 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/main (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2016-02-10 22:53:14 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QbzH85/zW8WqYrwwTsTOlhake2PItXijAFZq6UjBvrBsEKzyeCxj7dkakRuZ+i5C8qSaWCQCRvPP3Q/lV9FOsQ==", "user"=>{"username"=>"JeffJeff", "fname"=>"Jeff", "lname"=>"Bowne", "email"=>"jeff@nycda.com", "password"=>"[FILTERED]"}, "commit"=>"create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (1.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jeff@nycda.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'JeffJeff' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("username", "fname", "lname", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["username", "JeffJeff"], ["fname", "Jeff"], ["lname", "Bowne"], ["email", "jeff@nycda.com"], ["password", "12345678"], ["created_at", "2016-02-11 03:53:14.498600"], ["updated_at", "2016-02-11 03:53:14.498600"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "profiles" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 3], ["created_at", "2016-02-11 03:53:14.502760"], ["updated_at", "2016-02-11 03:53:14.502760"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mProfile Load (0.1ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 3]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:53:14 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-10 22:53:25 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cViE/1YRFu4z9muThIICOQmGZNpzP0OWLRIIeYCodrlc9O/+sc4uxkCORrhTvOLt7YaF4Z+IfcbimW11n7iGuA==", "username"=>"JeffJeff", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["username", "JeffJeff"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Redirected to http://localhost:3000/home.3
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/home.3" for ::1 at 2016-02-10 22:53:25 -0500
+Processing by HomeController#home as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 3]]
+  Rendered home/home.html.erb within layouts/main (0.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users/1/relationships" for ::1 at 2016-02-10 22:53:27 -0500
+Processing by RelationshipsController#create as HTML
+  Parameters: {"authenticity_token"=>"hBUeHVLfD2Gioaw5TxH8ZdaSC7U2bXK0B6HsVdQjT1WpuXUctQA3SdHZgRKYLxyxMpLqjtraTOTIKolZyzO/VA==", "user_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "relationships" ("followed_id", "follower_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["followed_id", 1], ["follower_id", 3], ["created_at", "2016-02-11 03:53:27.027764"], ["updated_at", "2016-02-11 03:53:27.027764"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/home.3
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/home.3" for ::1 at 2016-02-10 22:53:27 -0500
+Processing by HomeController#home as 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 3]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/home.html.erb within layouts/main (3.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 51ms (Views: 47.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/2/relationships" for ::1 at 2016-02-10 22:53:28 -0500
+Processing by RelationshipsController#create as HTML
+  Parameters: {"authenticity_token"=>"bbeOjI9wx0onMqPrqQ916yb8XK2taojBEDFsDnyXyCRAG+WNaK//YlRKjsB+MZU/wvy9lkHdtpHfugkCY4c4JQ==", "user_id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "relationships" ("followed_id", "follower_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["followed_id", 2], ["follower_id", 3], ["created_at", "2016-02-11 03:53:28.409474"], ["updated_at", "2016-02-11 03:53:28.409474"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/home.3
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/home.3" for ::1 at 2016-02-10 22:53:28 -0500
+Processing by HomeController#home as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 3]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/home.html.erb within layouts/main (5.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 52ms (Views: 47.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/posts" for ::1 at 2016-02-10 22:53:53 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wZDNclzuFjBSqBoO92iNSC75ljxWpnuM6dcx0EJhTXTsPKZzuzEuGCHQNyUgVm2cyvl3B7oRRdwmXFTcXXG9dQ==", "post"=>{"title"=>"Cawer's Third Post!", "content"=>"My first post as well!"}, "commit"=>"create"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Cawer's Third Post!"], ["content", "My first post as well!"], ["created_at", "2016-02-11 03:53:53.372532"], ["updated_at", "2016-02-11 03:53:53.372532"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "user_id" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["user_id", 3], ["updated_at", "2016-02-11 03:53:53.378797"], ["id", 3]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/home.3
+Completed 302 Found in 16ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/home.3" for ::1 at 2016-02-10 22:53:53 -0500
+Processing by HomeController#home as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 3]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/home.html.erb within layouts/main (6.9ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 60ms (Views: 53.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/home" for ::1 at 2016-02-10 22:53:56 -0500
+Processing by HomeController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 3]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered home/home.html.erb within layouts/main (6.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 48ms (Views: 44.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:54:03 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/globalcaws.html.erb within layouts/main (9.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 3], ["id", 1]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 3], ["id", 2]]
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/posts/2/comments" for ::1 at 2016-02-10 22:54:12 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0M40OqyzvlP9q9DIpQPoot1EZy5FHS6RwaS3vp1WUqn9Yl87S2yGe47T/eNyPQh2OUSGFamqEMEOL9KygkaiqA==", "comment"=>{"content"=>"Hi Jon!"}, "commit"=>"Comment", "post_id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Hi Jon!"], ["created_at", "2016-02-11 03:54:12.333580"], ["updated_at", "2016-02-11 03:54:12.333580"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "comments" SET "user_id" = ?, "post_id" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["user_id", 3], ["post_id", 2], ["updated_at", "2016-02-11 03:54:12.338608"], ["id", 4]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/globalcaws
+Completed 302 Found in 10ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:54:12 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered home/globalcaws.html.erb within layouts/main (9.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 3], ["id", 1]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 3], ["id", 2]]
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/posts/1/comments" for ::1 at 2016-02-10 22:54:22 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oppToWZMWtKDydm7hs1rLR68z39VAka6ULeZkBcigjePNjiggZNi+vCx9JBR84v5+rwuRLm1eOqfPPycCDJyNg==", "comment"=>{"content"=>"Well hello there Alan!"}, "commit"=>"Comment", "post_id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Well hello there Alan!"], ["created_at", "2016-02-11 03:54:22.822916"], ["updated_at", "2016-02-11 03:54:22.822916"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "comments" SET "user_id" = ?, "post_id" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["user_id", 3], ["post_id", 1], ["updated_at", "2016-02-11 03:54:22.827726"], ["id", 5]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/globalcaws
+Completed 302 Found in 9ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:54:22 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/globalcaws.html.erb within layouts/main (10.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 3], ["id", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 3], ["id", 2]]
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/home" for ::1 at 2016-02-10 22:54:36 -0500
+Processing by HomeController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 3]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/home.html.erb within layouts/main (7.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 55ms (Views: 50.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/3" for ::1 at 2016-02-10 22:54:51 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mProfile Load (0.1ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 3]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  Rendered users/show.html.erb within layouts/main (5.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 3], ["id", 1]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 3], ["id", 2]]
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/profiles/3/update" for ::1 at 2016-02-10 22:55:22 -0500
+Processing by ProfilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XQqzcMwbg44yOE+0HZUjdy6u50hmfHWlRxGI5LuRXBJwpthxK8S7pkFAYp/Kq8Ojyq4Gc4rLS/WImu3opIGsEw==", "form_fields"=>{"biography"=>"Space Traveler", "age"=>"26", "location"=>"Outer Space"}, "commit"=>"Edit", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mProfile Load (0.1ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "profiles" SET "biography" = ?, "age" = ?, "location" = ?, "updated_at" = ? WHERE "profiles"."id" = ?  [["biography", "Space Traveler"], ["age", "26"], ["location", "Outer Space"], ["updated_at", "2016-02-11 03:55:22.390210"], ["id", 3]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 6ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/users/3" for ::1 at 2016-02-10 22:55:22 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 3]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  Rendered users/show.html.erb within layouts/main (5.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 3]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 3], ["id", 1]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 3], ["id", 2]]
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sign-out?method=post" for ::1 at 2016-02-10 22:55:24 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"method"=>"post"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:55:24 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-10 22:55:31 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BYQTGz8YzZHegIBIfaVVL/iVFVYAEBg9xj3kW1sa4lIoKHga2Mf1ua34rWOqm7X7HJX0beynJm0JtoFXRAoSUw==", "username"=>"AlanMRhode", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["username", "AlanMRhode"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/home.1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/home.1" for ::1 at 2016-02-10 22:55:31 -0500
+Processing by HomeController#home as 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/home.html.erb within layouts/main (3.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/3/relationships" for ::1 at 2016-02-10 22:55:34 -0500
+Processing by RelationshipsController#create as HTML
+  Parameters: {"authenticity_token"=>"ONEcXKgQApgWNRajQR0aSDLYICIEWXLGS1bOKQqQm6wVfXddT886sGVNO4iWI/qc1tjBGejuTJaE3aslFYBrrQ==", "user_id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "relationships" ("followed_id", "follower_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["followed_id", 3], ["follower_id", 1], ["created_at", "2016-02-11 03:55:34.867141"], ["updated_at", "2016-02-11 03:55:34.867141"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/home.1
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/home.1" for ::1 at 2016-02-10 22:55:34 -0500
+Processing by HomeController#home as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 2]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/home.html.erb within layouts/main (4.8ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 49ms (Views: 44.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:55:39 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/globalcaws.html.erb within layouts/main (11.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 1], ["id", 2]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 1], ["id", 3]]
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/posts/3/comments" for ::1 at 2016-02-10 22:55:52 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SjaPp+N3UpDwteoT/vI8kSmujwletIWZ7lsb5gxl9pBnmuSmBKhquIPNxzgpzNxFza5uMrIDu8kh0H7qE3UGkQ==", "comment"=>{"content"=>"Booo! It's Jeff"}, "commit"=>"Comment", "post_id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "Booo! It's Jeff"], ["created_at", "2016-02-11 03:55:52.446353"], ["updated_at", "2016-02-11 03:55:52.446353"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "comments" SET "user_id" = ?, "post_id" = ?, "updated_at" = ? WHERE "comments"."id" = ?[0m  [["user_id", 1], ["post_id", 3], ["updated_at", "2016-02-11 03:55:52.450723"], ["id", 6]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/globalcaws
+Completed 302 Found in 9ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:55:52 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/globalcaws.html.erb within layouts/main (12.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 1], ["id", 2]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 1], ["id", 3]]
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/1" for ::1 at 2016-02-10 22:55:59 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.1ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered users/show.html.erb within layouts/main (5.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 1], ["id", 2]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 1], ["id", 3]]
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/profiles/1/update" for ::1 at 2016-02-10 22:56:12 -0500
+Processing by ProfilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vk2lIz2OMU0IP0WIkMf5sdDD2+QX4TueVNrgatGOuOh74c4i2lEJZXtHaKNH+RllNMM63/tWBc6bUYVmzp5I6Q==", "form_fields"=>{"biography"=>"Finance", "age"=>"30", "location"=>"Philadelphia"}, "commit"=>"Edit", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.1ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "profiles" SET "biography" = ?, "age" = ?, "location" = ?, "updated_at" = ? WHERE "profiles"."id" = ?  [["biography", "Finance"], ["age", "30"], ["location", "Philadelphia"], ["updated_at", "2016-02-11 03:56:12.294686"], ["id", 1]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users/1" for ::1 at 2016-02-10 22:56:12 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.1ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered users/show.html.erb within layouts/main (4.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 1], ["id", 2]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 1], ["id", 3]]
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:56:14 -0500
+Processing by HomeController#globalcaws as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/globalcaws.html.erb within layouts/main (11.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1  [["follower_id", 1], ["id", 2]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT 1[0m  [["follower_id", 1], ["id", 3]]
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/sign-out?method=post" for ::1 at 2016-02-10 22:56:22 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"method"=>"post"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:56:22 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-10 22:56:24 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/main (2.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2016-02-10 22:56:42 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aPURECMJzfj+nmRTdSAvK4SCDFEzzcNIuGI8/cLz50VFWXoRxNb10I3mSXiiHs//YILtat96/Rh36Vnx3eMXRA==", "user"=>{"username"=>"HelloSeth", "fname"=>"Seth", "lname"=>"Lieberman", "email"=>"seth@nycda.com", "password"=>"[FILTERED]"}, "commit"=>"create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'seth@nycda.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'HelloSeth' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("username", "fname", "lname", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["username", "HelloSeth"], ["fname", "Seth"], ["lname", "Lieberman"], ["email", "seth@nycda.com"], ["password", "12345678"], ["created_at", "2016-02-11 03:56:42.963119"], ["updated_at", "2016-02-11 03:56:42.963119"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "profiles" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 4], ["created_at", "2016-02-11 03:56:42.967004"], ["updated_at", "2016-02-11 03:56:42.967004"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mProfile Load (0.1ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 4]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:56:42 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-10 22:56:51 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8JfaNW2QlQiHiMcICGyMibrIxhHQ43hPn5UoGMgxivPdO7E0ik+tIPTw6iPfUmxdXsgnKjxURh9QHk0U1yF68g==", "username"=>"HelloSeth", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["username", "HelloSeth"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Redirected to http://localhost:3000/home.4
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/home.4" for ::1 at 2016-02-10 22:56:51 -0500
+Processing by HomeController#home as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 4]]
+  Rendered home/home.html.erb within layouts/main (0.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/1/relationships" for ::1 at 2016-02-10 22:56:53 -0500
+Processing by RelationshipsController#create as HTML
+  Parameters: {"authenticity_token"=>"vIya8xB0dM3JzBqb+Op4cSAmYG55uKKUepzGMkFAJAyRIPHy96tM5bq0N7Av1JilxCaBVZUPnMS1F6M+XlDUDQ==", "user_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "relationships" ("followed_id", "follower_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["followed_id", 1], ["follower_id", 4], ["created_at", "2016-02-11 03:56:53.463975"], ["updated_at", "2016-02-11 03:56:53.463975"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/home.4
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/home.4" for ::1 at 2016-02-10 22:56:53 -0500
+Processing by HomeController#home as 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 4]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/home.html.erb within layouts/main (5.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 50ms (Views: 46.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users/2/relationships" for ::1 at 2016-02-10 22:56:54 -0500
+Processing by RelationshipsController#create as HTML
+  Parameters: {"authenticity_token"=>"bQGiefqFxD9UvsOmmggIhG1U1aW+LcZ7AzX8+mqVY5tArcl4HVr8FyfG7o1NNuhQiVQ0nlKa+CvMvpn2dYWTmg==", "user_id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "relationships" ("followed_id", "follower_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["followed_id", 2], ["follower_id", 4], ["created_at", "2016-02-11 03:56:54.887409"], ["updated_at", "2016-02-11 03:56:54.887409"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/home.4
+Completed 302 Found in 7ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/home.4" for ::1 at 2016-02-10 22:56:54 -0500
+Processing by HomeController#home as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 4]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/home.html.erb within layouts/main (7.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 60ms (Views: 53.6ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users/3/relationships" for ::1 at 2016-02-10 22:56:56 -0500
+Processing by RelationshipsController#create as HTML
+  Parameters: {"authenticity_token"=>"vC48adJozf08wUaAtiITkG8nKL7m9f99er/0m06vgeWRgldoNbf11U+5a6thHPNEiyfJhQpCwS21NJGXUb9x5A==", "user_id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "relationships" ("followed_id", "follower_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["followed_id", 3], ["follower_id", 4], ["created_at", "2016-02-11 03:56:56.725853"], ["updated_at", "2016-02-11 03:56:56.725853"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/home.4
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/home.4" for ::1 at 2016-02-10 22:56:56 -0500
+Processing by HomeController#home as 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 4]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 2]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered home/home.html.erb within layouts/main (9.9ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?  [["followed_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 4]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 61ms (Views: 55.7ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/posts" for ::1 at 2016-02-10 22:57:18 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Bnn5Pg0auBFSzlje41DDSXYYpe+EF/tSK/wWI2ndjn5tYzlH+tSyDYzFEiss6PZwdiDrFKnYb2HJJVUkreGOA==", "post"=>{"title"=>"I've Joined!", "content"=>"Hello world, I'm here!"}, "commit"=>"create"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "I've Joined!"], ["content", "Hello world, I'm here!"], ["created_at", "2016-02-11 03:57:18.102755"], ["updated_at", "2016-02-11 03:57:18.102755"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "user_id" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["user_id", 4], ["updated_at", "2016-02-11 03:57:18.108826"], ["id", 4]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/home.4
+Completed 302 Found in 12ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/home.4" for ::1 at 2016-02-10 22:57:18 -0500
+Processing by HomeController#home as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?[0m  [["follower_id", 4]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered home/home.html.erb within layouts/main (8.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE "relationships"."follower_id" = ?  [["follower_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."follower_id" WHERE "relationships"."followed_id" = ?[0m  [["followed_id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = ?  [["user_id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 54ms (Views: 48.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/sign-out?method=post" for ::1 at 2016-02-10 22:57:37 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"method"=>"post"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:57:37 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (1.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-10 22:57:43 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/main (2.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2016-02-10 22:58:22 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rIyMu3C7x2KbTON3+UsJTQ6W2FluoRmVeaRXab1F1H2BIOe6l2T/Sug0zlwudemZ6pY5YoIWJ8W2LzJlolUkfA==", "user"=>{"username"=>"RIchMab", "fname"=>"Richard", "lname"=>"Mable", "email"=>"richard@nycda.com", "password"=>"[FILTERED]"}, "commit"=>"create"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'richard@nycda.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'RIchMab' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("username", "fname", "lname", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["username", "RIchMab"], ["fname", "Richard"], ["lname", "Mable"], ["email", "richard@nycda.com"], ["password", "12345678"], ["created_at", "2016-02-11 03:58:22.178722"], ["updated_at", "2016-02-11 03:58:22.178722"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "profiles" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 5], ["created_at", "2016-02-11 03:58:22.183527"], ["updated_at", "2016-02-11 03:58:22.183527"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mProfile Load (0.1ms)[0m  SELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT 1  [["user_id", 5]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:58:22 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-10 22:58:36 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QLII493XhWZQJ9TFYMjvQzquhiv78Ph4WyU4fhai+uVtHmPiOgi9TiNf+e639g+X3q5nEBdHxiiUrl1yCbIK5A==", "username"=>"RichMab", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["username", "RichMab"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:58:36 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-10 22:58:45 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L1Sni+/HtC7w4/dhiaTYIEGLT8RRKAe1MpJOiyi/zR4C+MyKCBiMBoOb2kpemjj0pYuu/72fOeX9GSuHN689Hw==", "username"=>"RichMab", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["username", "RichMab"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:58:45 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for ::1 at 2016-02-10 22:58:47 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/main (2.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-02-10 22:58:50 -0500
+Processing by HomeController#home as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `followers_posts' for nil:NilClass):
+  app/controllers/home_controller.rb:14:in `home'
+
+
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.7ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (107.1ms)
+
+
+Started GET "/home" for ::1 at 2016-02-10 22:58:50 -0500
+Processing by HomeController#home as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `followers_posts' for nil:NilClass):
+  app/controllers/home_controller.rb:14:in `home'
+
+
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (41.2ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/AlanMichaelRhode/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (89.3ms)
+
+
+Started GET "/globalcaws" for ::1 at 2016-02-10 22:58:53 -0500
+Processing by HomeController#globalcaws as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:58:53 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/log-in?method=post" for ::1 at 2016-02-10 22:59:02 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aPztDzSaunQHJPbf1p5HB3X0CBHFbWg2IJJmcFgX0WdFUIYO00WCXHRc2/QBoKfTkfTpKinaVmbvGQN8RwchZg==", "username"=>"RichMab", "password"=>"[FILTERED]", "commit"=>"Login", "method"=>"post"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["username", "RichMab"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-10 22:59:02 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/main (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.1ms)

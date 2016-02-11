@@ -1,0 +1,20 @@
+<% content_for :feed do %>
+	<h1>Sign up!</h1>
+	<%= form_for @user do |f| %>
+		<%= f.label "Username"%>
+		<%= f.text_field :username%>
+		<br>
+		<%= f.label "First Name"%>
+		<%= f.text_field :fname%>
+		<br>
+		<%= f.label "Last Name"%>
+		<%= f.text_field :lname%>
+		<br>
+		<%= f.label "Email"%>
+		<%= f.text_field :email%>
+		<br>
+		<%= f.label "Password"%>
+		<%= f.password_field :password%>
+		<%= f.submit :create%>
+	<% end %>
+<% end %>

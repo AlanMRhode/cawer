@@ -1,0 +1,17 @@
+<% content_for :feed do %>
+<div class="landing_div">
+	<h1>Welcome!</h1>
+	<div class="landing_div_inners"><%= link_to("Create New User", users_new_path)%></div>
+<div class="landing_div_inners">
+	<h3>Log-in</h3>
+		<%= flash.notice %>
+	<%= form_tag ({controller: "sessions", action: "create", method: "post"}) do %>
+		<%= label_tag "Username" %>
+		<%= text_field_tag :username %>
+		<%= label_tag "Password" %>
+		<%= password_field_tag :password %>
+		<%= submit_tag :Login %>
+	<% end %>
+</div>
+</div>
+<% end %>
